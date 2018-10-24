@@ -3,15 +3,16 @@ nodist_pkgconfig_DATA = libenet.pc
 
 enetincludedir=$(includedir)/enet
 enetinclude_HEADERS = \
-	include/enet/callbacks.h \
-	include/enet/enet.h \
-	include/enet/list.h \
-	include/enet/protocol.h \
-	include/enet/time.h \
-	include/enet/types.h \
-	include/enet/unix.h \
-	include/enet/utility.h \
-	include/enet/win32.h
+	enet/callbacks.h \
+	enet/enet.h \
+	enet/list.h \
+	enet/protocol.h \
+	enet/time.h \
+	enet/types.h \
+	enet/unix.h \
+	enet/utility.h \
+	enet/win32.h \
+	common.h
 
 lib_LTLIBRARIES = libenet.la
 libenet_la_SOURCES = callbacks.c compress.c host.c list.c packet.c peer.c protocol.c unix.c win32.c
